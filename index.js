@@ -4,9 +4,9 @@ dotenv.config();
 import express from 'express';
 import mongoose from 'mongoose';
 
-import authRoutes from './routes/auth.routes.js';
-import bookRoutes from './routes/book.routes.js';
-import reviewRoutes from './routes/review.routes.js';
+import authRoutes from './routes/auth.js';
+import bookRoutes from './routes/book.js';
+import reviewRoutes from './routes/review.js';
 
 const app = express();
 
