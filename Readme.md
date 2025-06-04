@@ -1,4 +1,3 @@
-````markdown
 # Book Review API
 
 A RESTful API built with Node.js, Express, MongoDB, and JWT authentication for managing books and reviews.
@@ -31,7 +30,7 @@ A RESTful API built with Node.js, Express, MongoDB, and JWT authentication for m
    ```bash
    git clone https://github.com/your-username/book-review-api.git
    cd book-review-api
-````
+   ```
 
 2. **Install dependencies:**
 
@@ -91,15 +90,3 @@ It provides interactive documentation for all API endpoints, including request a
 ---
 
 Feel free to contribute or raise issues!
-
----
-
-**Author:** Your Name
-**License:** MIT
-
-```
-
----
-
-If you want, I can also help you generate a `.env.example` or `package.json` snippet!
-```
