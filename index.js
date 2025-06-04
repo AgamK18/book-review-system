@@ -1,12 +1,14 @@
-// server.js
-require('dotenv').config();
-const express = require('express');
-const mongoose = require('mongoose');
-const app = express();
+import dotenv from 'dotenv';
+dotenv.config();
 
-const authRoutes = require('./routes/auth.routes');
-const bookRoutes = require('./routes/book.routes');
-const reviewRoutes = require('./routes/review.routes');
+import express from 'express';
+import mongoose from 'mongoose';
+
+import authRoutes from './routes/auth.routes.js';
+import bookRoutes from './routes/book.routes.js';
+import reviewRoutes from './routes/review.routes.js';
+
+const app = express();
 
 app.use(express.json());
 
