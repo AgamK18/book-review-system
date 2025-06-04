@@ -8,9 +8,14 @@ import authRoutes from './routes/auth.js';
 import bookRoutes from './routes/book.js';
 import reviewRoutes from './routes/review.js';
 
+import setupSwagger from './swagger.js';
+
 const app = express();
 
 app.use(express.json());
+
+// Swagger docs route
+setupSwagger(app);
 
 // Routes
 app.use('/auth', authRoutes);
