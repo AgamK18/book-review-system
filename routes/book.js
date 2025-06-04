@@ -1,6 +1,6 @@
 import express from 'express';
 import { addBook, getBooks, getBookById, searchBooks } from '../controllers/book.controller.js';
-import { authenticate } from '../middlewares/auth.middleware.js';
+import { authenticate } from '../middlewares/auth.js';
 import { addReview } from '../controllers/review.controller.js';
 
 const router = express.Router();
