@@ -1,7 +1,7 @@
 import express from 'express';
-import { addBook, getBooks, getBookById, searchBooks } from '../controllers/book.controller.js';
+import { addBook, getBooks, getBookById, searchBooks } from '../controllers/book.js';
 import { authenticate } from '../middlewares/auth.js';
-import { addReview } from '../controllers/review.controller.js';
+import { addReview } from '../controllers/review.js';
 
 const router = express.Router();
 
