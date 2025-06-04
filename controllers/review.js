@@ -30,7 +30,7 @@ export const deleteReview = async (req, res) => {
     const review = await Review.findById(req.params.id);
     if (review.user.toString() !== req.user.id) return res.status(403).json({ message: 'Unauthorized' });
 
-    await review.remove();
+    await review.deleteOne();
     res.json({ message: 'Review deleted' });
   } catch (err) {
     res.status(400).json({ message: 'Delete failed', error: err.message });
